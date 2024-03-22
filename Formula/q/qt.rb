@@ -202,6 +202,7 @@ class Qt < Formula
     cmake_args = std_cmake_args(install_prefix: HOMEBREW_PREFIX, find_framework: "FIRST") + %w[
       -DFEATURE_pkg_config=ON
       -DINSTALL_MKSPECSDIR=share/qt/mkspecs
+      -DQT_FEATURE_ffmpeg=ON
       -DQT_FEATURE_webengine_proprietary_codecs=ON
       -DQT_FEATURE_webengine_kerberos=ON
       -DQT_ALLOW_SYMLINK_IN_PATHS=ON
